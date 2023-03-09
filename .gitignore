@@ -75,3 +75,6 @@ crashlytics-build.properties
 *.vsconfig
 **/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
 **/ProjectSettings/ProjectSettings.asset
+MedicalSimulatorWeb/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+MedicalSimulatorVR/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+MedicalSimulatorTest/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
