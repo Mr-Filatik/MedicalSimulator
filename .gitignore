@@ -73,5 +73,5 @@ crashlytics-build.properties
 **/[Aa]ssets/[Ss]treamingAssets/aa/*
 
 *.vsconfig
-**/ProjectSettings/Packages/*/Settings.json
+**/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
 **/ProjectSettings/ProjectSettings.asset
