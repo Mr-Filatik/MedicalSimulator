@@ -26,6 +26,31 @@ Unity: Version 2021.3.20f1
 
 .NET Core: Version 7.0
 
+# Information about methods for obtaining server data (http://filatik.somee.com)
+
+```
+# Получить количество всех пользователей.
+GET - /count/users
+```
+```
+# Получить количество пользователей по выборке.
+GET - /count/users/{predicate}
+```
+```
+# Получить информацию о пользователе.
+GET - /user/{id}
+```
+```
+# Получить информацию о всех пользователях.
+GET - /users
+```
+```
+# Получить информацию о пользователях по выборке.
+GET - /users/{predicate}
+```
+
+# Information about others
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <configuration>
@@ -36,7 +61,4 @@ Unity: Version 2021.3.20f1
 </configuration>
 ```
 
-```
-# Run this script before building the project.
-./build/get-dotnet.sh or ./build/get-dotnet.ps1
-```
+
