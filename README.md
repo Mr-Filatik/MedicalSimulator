@@ -35,10 +35,12 @@ GET - /count/users
 ```
 # Получить количество пользователей по выборке.
 GET - /count/users/{predicate}
+      /count/users/x=>x.Id>4&&x.Id<=6
 ```
 ```
 # Получить информацию о пользователе.
 GET - /user/{id}
+      /user/4
 ```
 ```
 # Получить информацию о всех пользователях.
@@ -47,6 +49,7 @@ GET - /users
 ```
 # Получить информацию о пользователях по выборке.
 GET - /users/{predicate}
+      /users/x=>x.Id>4&&x.Id<=6
 ```
 
 # Information about others
