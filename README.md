@@ -36,6 +36,7 @@ GET - /count/users
 # Получить количество пользователей по выборке.
 GET - /count/users/{predicate}
       /count/users/x=>x.Id>4&&x.Id<=6
+      /count/users/x => x.Id > 4 && x.Id <= 6
 ```
 ```
 # Получить информацию о пользователе.
@@ -50,9 +51,25 @@ GET - /users
 # Получить информацию о пользователях по выборке.
 GET - /users/{predicate}
       /users/x=>x.Id>4&&x.Id<=6
+      /users/x => x.Id > 4 && x.Id <= 6
 ```
 
 # Information about others
+
+```csharp
+public class User
+{
+      public int Id { get; set; }
+      public string Login { get; set; }
+      public string PasswordHash { get; set; }
+      public string Surname { get; set; }
+      public string Name { get; set; }
+      public string? Patronymic { get; set; }
+      public string? Email { get; set; }
+      public string? Phone { get; set; }
+      public int? Age { get; set; }
+}
+```
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
