@@ -26,60 +26,38 @@ Unity: Version 2021.3.20f1
 
 .NET Core: Version 7.0
 
-# Information about methods for obtaining server data (http://filatik.somee.com)
+## Information about methods for obtaining server data
+
+Information about methods, request paths and their types is displayed [HERE](http://filatik.somee.com/swagger)
 
 ```
-# Получить количество всех пользователей.
-GET - /count/users
+{id} and {page} - integers
 ```
 ```
-# Получить количество пользователей по выборке.
-GET - /count/users/{predicate}
-      /count/users/x=>x.Id>4&&x.Id<=6
-      /count/users/x => x.Id > 4 && x.Id <= 6
-```
-```
-# Получить информацию о пользователе.
-GET - /user/{id}
-      /user/4
-```
-```
-# Получить информацию о всех пользователях.
-GET - /users
-```
-```
-# Получить информацию о пользователях по выборке.
-GET - /users/{predicate}
-      /users/x=>x.Id>4&&x.Id<=6
-      /users/x => x.Id > 4 && x.Id <= 6
+{predicate} - expression for selection
+* example: x => x.Id > 4 && x.Id <= 6
+* example: x=>x.Id>4&&x.Id<=6
 ```
 
-# Information about others
+Information for create expressions
 
 ```csharp
-public class User
+class User
 {
-      public int Id { get; set; }
-      public string Login { get; set; }
-      public string PasswordHash { get; set; }
-      public string Surname { get; set; }
-      public string Name { get; set; }
-      public string? Patronymic { get; set; }
-      public string FullName { get; }
-      public string? Email { get; set; }
-      public string? Phone { get; set; }
-      public int? Age { get; set; }
+      int Id { get; set; }
+      string Login { get; set; }
+      string PasswordHash { get; set; }
+      string Surname { get; set; }
+      string Name { get; set; }
+      string? Patronymic { get; set; }
+      string FullName { get; }
+      string? Email { get; set; }
+      string? Phone { get; set; }
+      int? Age { get; set; }
 }
 ```
 
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<configuration>
-    <packageSources>
-        <!-- Add this repository to the list of available repositories -->
-        <add key="gRPC repository" value="https://grpc.jfrog.io/grpc/api/nuget/v3/grpc-nuget-dev" />
-    </packageSources>
-</configuration>
-```
+## Information about others
+
 
 
