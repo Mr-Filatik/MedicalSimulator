@@ -8,12 +8,17 @@ public class EnterIn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         Debug.Log("GOOD");
+         
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void CheckCode()
+    {
+        Debug.Log("GOOD");
     }
 }
