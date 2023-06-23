@@ -71,11 +71,11 @@ public class AttemptResponse
 public class Attempt
 {
     public int id;
-    UserForAttempt user;
-    UserForAttempt creator;
-    DiagnosisForAttempt expectedDiagnosis;
-    DiagnosisForAttempt specifiedDiagnosis;
-    ModeForAttempt mode;
+    public UserForAttempt user;
+    public UserForAttempt creator;
+    public DiagnosisForAttempt expectedDiagnosis;
+    public DiagnosisForAttempt specifiedDiagnosis;
+    public ModeForAttempt mode;
     public string code;
     public string startDateTime; //timestamp
     public string endDateTime; //timestamp
@@ -173,4 +173,12 @@ public class Symptom
 {
     public SymptomForAttempt symptom;
     public SymptomMeaning symptomMeaning;
+}
+
+[Serializable]
+public class Diagnosis
+{
+    public int current_page;
+    public int last_page;
+    public List<DiagnosisForAttempt> diagnosis;
 }

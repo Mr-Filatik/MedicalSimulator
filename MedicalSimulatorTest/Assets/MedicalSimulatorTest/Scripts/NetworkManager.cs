@@ -152,6 +152,13 @@ public class NetworkManager : MonoBehaviour
         Data = $"",
         RequestType = RequestType.GET
     };
+    /// <returns>Diagnosis</returns>
+    public InfoForRequest GetDiagnosis(int page) => new InfoForRequest()
+    {
+        Address = $"{NetworkSettings.Address}/diagnosis/{page}",
+        Data = $"",
+        RequestType = RequestType.GET
+    };
 }
 
 public class InfoForRequest
